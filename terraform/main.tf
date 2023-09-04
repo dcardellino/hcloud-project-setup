@@ -2,7 +2,7 @@ resource "hcloud_network" "network" {
   name     = "cardellinotech"
   ip_range = "172.18.64.0/22"
   labels = {
-    "ManagedBy"   = "Terraform"
+    "ManagedBy" = "Terraform"
   }
   delete_protection = true
 }
@@ -24,6 +24,6 @@ resource "hcloud_ssh_key" "ssh_key" {
   name       = "cardellinotech"
   public_key = file("~/.ssh/id_ed25519.pub")
   labels = {
-    "ManagedBy"   = "Terraform"
+    "ManagedBy" = "Terraform"
   }
 }
