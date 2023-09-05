@@ -22,7 +22,7 @@ resource "hcloud_network_route" "route" {
 
 resource "hcloud_ssh_key" "ssh_key" {
   name       = "cardellinotech"
-  public_key = file("~/.ssh/id_ed25519.pub")
+  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICBrbYD0TPU8KzFpawTT0MSTN7wc/RExRQ1h0FxOfgl/ dominic@cardellino.tech"
   labels = {
     "ManagedBy" = "Terraform"
   }
