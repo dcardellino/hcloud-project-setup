@@ -12,7 +12,7 @@ resource "hcloud_network_subnet" "subnet" {
   type         = "server"
   network_zone = "eu-central"
   ip_range     = "172.18.64.0/22"
-  vswitch_id = 43067
+  vswitch_id   = 43067
 }
 
 resource "hcloud_network_route" "route" {
